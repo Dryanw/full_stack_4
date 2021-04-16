@@ -8,7 +8,8 @@ class AddStudent extends React.Component {
     }
 
     handleChange = event => {
-        this.setState({name: event.nativeEvent.srcElement.value});
+        this.setState({name: event.target.value});
+        console.log(this.state.name);
     }
 
     handleSubmit = event => {
